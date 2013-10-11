@@ -1,12 +1,12 @@
-# revision 15878
+# revision 31543
 # category Package
 # catalog-ctan /macros/latex/contrib/listings
-# catalog-date 2007-03-12 20:45:12 +0100
+# catalog-date 2013-08-29 20:49:40 +0200
 # catalog-license lppl
-# catalog-version 1.4
+# catalog-version 1.5b
 Name:		texlive-listings
-Version:	1.4
-Release:	2
+Version:	1.5b
+Release:	1
 Summary:	Typeset source code listings using LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/listings
@@ -20,14 +20,14 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-Typeset programs (programming code) within LaTeX. The source
-code is read directly by TeX. Keywords, comments and strings
-can be typeset using different styles (default is bold for
-keywords, italic for comments and no special style for
-strings). Includes support for hyperref. To use, simply
-\usepackage{listings}, identify the language with
-\lstset{language=Python}, then employ the \begin{lstlisting}
-... \end{lstlisting} environment or the
+The package enable the user to typeset programs (programming
+code) within LaTeX. The source code is read directly by TeX.
+Keywords, comments and strings can be typeset using different
+styles (default is bold for keywords, italic for comments and
+no special style for strings). Includes support for hyperref.
+To use, simply \usepackage{listings}, identify the language
+with \lstset{language=Python}, then employ the
+\begin{lstlisting} ... \end{lstlisting} environment or the
 \lstinputlisting{filename.py} command. Short (in-line) listings
 are also available, using either \lstinline|...| or | ... |
 (after defining the | token with the \lstMakeShortInline
@@ -50,10 +50,13 @@ command).
 %{_texmfdistdir}/tex/latex/listings/lstlang2.sty
 %{_texmfdistdir}/tex/latex/listings/lstlang3.sty
 %{_texmfdistdir}/tex/latex/listings/lstmisc.sty
+%doc %{_texmfdistdir}/doc/latex/listings/Makefile
 %doc %{_texmfdistdir}/doc/latex/listings/README
+%doc %{_texmfdistdir}/doc/latex/listings/listings-lua.prf
+%doc %{_texmfdistdir}/doc/latex/listings/listings-python.prf
 %doc %{_texmfdistdir}/doc/latex/listings/listings.pdf
+%doc %{_texmfdistdir}/doc/latex/listings/lstdrvrs.pdf
 #- source
-%doc %{_texmfdistdir}/source/latex/listings/Makefile
 %doc %{_texmfdistdir}/source/latex/listings/listings.dtx
 %doc %{_texmfdistdir}/source/latex/listings/listings.ins
 %doc %{_texmfdistdir}/source/latex/listings/lstdrvrs.dtx
@@ -68,17 +71,3 @@ command).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.4-2
-+ Revision: 753366
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.4-1
-+ Revision: 718867
-- texlive-listings
-- texlive-listings
-- texlive-listings
-- texlive-listings
-
