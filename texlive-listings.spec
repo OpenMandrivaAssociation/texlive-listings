@@ -1,12 +1,12 @@
-# revision 31543
+# revision 33095
 # category Package
 # catalog-ctan /macros/latex/contrib/listings
-# catalog-date 2013-08-29 20:49:40 +0200
+# catalog-date 2014-03-04 22:18:45 +0100
 # catalog-license lppl
-# catalog-version 1.5b
+# catalog-version 1.5c
 Name:		texlive-listings
-Version:	1.5b
-Release:	5
+Version:	1.5c
+Release:	1
 Summary:	Typeset source code listings using LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/listings
@@ -20,17 +20,19 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The package enable the user to typeset programs (programming
-code) within LaTeX. The source code is read directly by TeX.
-Keywords, comments and strings can be typeset using different
-styles (default is bold for keywords, italic for comments and
-no special style for strings). Includes support for hyperref.
-To use, simply \usepackage{listings}, identify the language
-with \lstset{language=Python}, then employ the
-\begin{lstlisting} ... \end{lstlisting} environment or the
-\lstinputlisting{filename.py} command. Short (in-line) listings
-are also available, using either \lstinline|...| or | ... |
-(after defining the | token with the \lstMakeShortInline
+The package enables the user to typeset programs (programming
+code) within LaTeX; the source code is read directly by TeX--no
+front-end processor is needed. Keywords, comments and strings
+can be typeset using different styles (default is bold for
+keywords, italic for comments and no special style for
+strings). Support for hyperref is provided. To use,
+\usepackage{listings}, identify the language of the object to
+typeset, using a construct like: \lstset{language=Python}, then
+use environment lstlisting for inline code. External files may
+be formatted using \lstinputlisting to process a given file in
+the form appropriate for the current language. Short (in-line)
+listings are also available, using either \lstinline|...| or
+|...| (after defining the | token with the \lstMakeShortInline
 command).
 
 %post
@@ -52,6 +54,8 @@ command).
 %{_texmfdistdir}/tex/latex/listings/lstmisc.sty
 %doc %{_texmfdistdir}/doc/latex/listings/Makefile
 %doc %{_texmfdistdir}/doc/latex/listings/README
+%doc %{_texmfdistdir}/doc/latex/listings/listings-acm.prf
+%doc %{_texmfdistdir}/doc/latex/listings/listings-fortran.prf
 %doc %{_texmfdistdir}/doc/latex/listings/listings-lua.prf
 %doc %{_texmfdistdir}/doc/latex/listings/listings-python.prf
 %doc %{_texmfdistdir}/doc/latex/listings/listings.pdf
