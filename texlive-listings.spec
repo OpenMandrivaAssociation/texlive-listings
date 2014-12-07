@@ -6,7 +6,7 @@
 # catalog-version 1.5c
 Name:		texlive-listings
 Version:	1.5c
-Release:	3
+Release:	4
 Summary:	Typeset source code listings using LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/listings
