@@ -1,12 +1,6 @@
-# revision 33095
-# category Package
-# catalog-ctan /macros/latex/contrib/listings
-# catalog-date 2014-03-04 22:18:45 +0100
-# catalog-license lppl
-# catalog-version 1.5c
 Name:		texlive-listings
-Version:	1.5c
-Release:	5
+Version:	1.6
+Release:	1
 Summary:	Typeset source code listings using LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/listings
@@ -45,26 +39,10 @@ command).
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/listings/listings.cfg
-%{_texmfdistdir}/tex/latex/listings/listings.sty
-%{_texmfdistdir}/tex/latex/listings/lstdoc.sty
-%{_texmfdistdir}/tex/latex/listings/lstlang1.sty
-%{_texmfdistdir}/tex/latex/listings/lstlang2.sty
-%{_texmfdistdir}/tex/latex/listings/lstlang3.sty
-%{_texmfdistdir}/tex/latex/listings/lstmisc.sty
-%doc %{_texmfdistdir}/doc/latex/listings/Makefile
-%doc %{_texmfdistdir}/doc/latex/listings/README
-%doc %{_texmfdistdir}/doc/latex/listings/listings-acm.prf
-%doc %{_texmfdistdir}/doc/latex/listings/listings-fortran.prf
-%doc %{_texmfdistdir}/doc/latex/listings/listings-lua.prf
-%doc %{_texmfdistdir}/doc/latex/listings/listings-python.prf
-%doc %{_texmfdistdir}/doc/latex/listings/listings.pdf
-%doc %{_texmfdistdir}/doc/latex/listings/lstdrvrs.pdf
+%{_texmfdistdir}/tex/latex/listings
+%doc %{_texmfdistdir}/doc/latex/listings
 #- source
-%doc %{_texmfdistdir}/source/latex/listings/listings.dtx
-%doc %{_texmfdistdir}/source/latex/listings/listings.ins
-%doc %{_texmfdistdir}/source/latex/listings/lstdrvrs.dtx
-%doc %{_texmfdistdir}/source/latex/listings/lstdrvrs.ins
+%doc %{_texmfdistdir}/source/latex/listings
 
 #-----------------------------------------------------------------------
 %prep
