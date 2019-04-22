@@ -1,6 +1,6 @@
 Name:		texlive-listings
-Version:	1.6
-Release:	3
+Version:	1.8b
+Release:	1
 Summary:	Typeset source code listings using LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/listings
