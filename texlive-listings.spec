@@ -3,7 +3,7 @@ Version:	71355
 Release:	1
 Summary:	Typeset source code listings using LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/listings
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/listings
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/listings.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/listings.doc.r%{version}.tar.xz
