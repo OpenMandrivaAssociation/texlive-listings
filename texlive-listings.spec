@@ -1,5 +1,5 @@
 Name:		texlive-listings
-Version:	71355
+Version:	72368
 Release:	1
 Summary:	Typeset source code listings using LaTeX
 Group:		Publishing
